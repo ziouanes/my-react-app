@@ -5,6 +5,7 @@ import { useState } from 'react';
 import ProductList from './components/ProductList';
 import Footer from './components/Footer';
 import './App.css';
+import Testcode from './test';
 
 const App = () => {
   const [cartItems, setCartItems] = useState([]);
@@ -17,9 +18,10 @@ const App = () => {
     <div className="app">
                
                <div className="main-content">
+                <Testcode />
                    <Banner />
                    {/* <ProductList /> */}
-                   <Cart cartItems={cartItems} />
+                   {/* <Cart cartItems={cartItems} /> */}
             <div className="main-content">
                 <ProductList addToCart={addToCart} />
             </div>
