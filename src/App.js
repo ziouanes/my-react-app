@@ -18,10 +18,9 @@ const App = () => {
     <div className="app">
                
                <div className="main-content">
-                <Testcode />
+                {/* <Testcode /> */}
                    <Banner />
-                   {/* <ProductList /> */}
-                   {/* <Cart cartItems={cartItems} /> */}
+                   <Cart cartItems={cartItems} />
             <div className="main-content">
                 <ProductList addToCart={addToCart} />
             </div>

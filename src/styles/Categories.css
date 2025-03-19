@@ -1,0 +1,11 @@
+.categories {
+    margin: 20px 0;
+}
+
+.category-select {
+    padding: 8px 16px;
+    font-size: 16px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    width: 200px;
+}
