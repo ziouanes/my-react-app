@@ -1,16 +1,48 @@
 .banner {
-    background-color: #4CAF50;
+    background: linear-gradient(135deg, #4CAF50 0%, #45a049 100%);
     text-align: center;
-    padding: 20px;
-    border-bottom: 2px solid #333;
+    padding: 2rem 1rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    position: sticky;
+    top: 0;
+    /* z-index: 1000; */
+    transition: all 0.3s ease;
+}
+
+.banner:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 .banner h1 {
     font-size: 2.5rem;
     color: #fff;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 600;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .banner p {
-    font-size: 1.5rem;
-    color: #fff;
+    font-size: 1.2rem;
+    color: rgba(255, 255, 255, 0.9);
+    margin: 1rem 0 0;
+    font-weight: 300;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (max-width: 768px) {
+    .banner {
+        padding: 1.5rem 1rem;
+    }
+
+    .banner h1 {
+        font-size: 2rem;
+    }
+
+    .banner p {
+        font-size: 1rem;
+    }
 }

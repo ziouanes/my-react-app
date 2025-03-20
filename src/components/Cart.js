@@ -17,8 +17,8 @@ function Cart({ cartItems }) {
                         {cartItems.map((item, index) => (
                             <li key={index}>
                                 {item.name} - {item.price} MAD 
-                                {item.quantity > 1 && ` x${item.quantity}`}
-                                <span className="item-total">
+                               <span>{item.quantity > 1 && ` x${item.quantity}`}</span> 
+                                <span className="cart-total">
                                     = {item.price * item.quantity} MAD
                                 </span>
                             </li>

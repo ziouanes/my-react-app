@@ -32,7 +32,7 @@ const App = () => {
    
     <div className="app">
                
-               <div className="main-content">
+               <div >
                 {/* <Testcode /> */}
                    <Banner />
                    <Cart cartItems={cartItems} />
