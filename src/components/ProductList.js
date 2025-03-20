@@ -4,10 +4,10 @@ import ProductItem from './ProductItem';
 import Categories from './Categories';
 
 const products = [
-    { id: 1, name: 'Collier Pendentif Argenté', price: '80€', category: 'Necklaces' },
-    { id: 2, name: 'Bracelet en Or', price: '120€', category: 'Bracelets' },
-    { id: 3, name: 'Boucles d\'Oreilles Diamant', price: '150€', category: 'Earrings' },
-    { id: 4, name: 'Bague Solitaire', price: '200€', category: 'Rings' }
+    { id: 1, name: 'Collier Pendentif Argenté', price: 80, category: 'Necklaces' },
+    { id: 2, name: 'Bracelet en Or', price: 120, category: 'Bracelets' },
+    { id: 3, name: 'Boucles d\'Oreilles Diamant', price: 150, category: 'Earrings' },
+    { id: 4, name: 'Bague Solitaire', price: 200, category: 'Rings' }
 ];
 
 const ProductList = ({ addToCart }) => {

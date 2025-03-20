@@ -11,7 +11,22 @@ const App = () => {
   const [cartItems, setCartItems] = useState([]);
 
   const addToCart = (product) => {
-      setCartItems([...cartItems, product]);
+    setCartItems(prevItems => {
+      // Check if product already exists in cart
+      const existingProduct = prevItems.find(item => item.id === product.id);
+      
+      if (existingProduct) {
+        // If product exists, update its quantity
+        return prevItems.map(item =>
+          item.id === product.id
+            ? { ...item, quantity: (item.quantity || 1) + 1 }
+            : item
+        );
+      }
+      
+      // If product doesn't exist, add it with quantity 1
+      return [...prevItems, { ...product, quantity: 1 }];
+    });
   };
   return (
    
