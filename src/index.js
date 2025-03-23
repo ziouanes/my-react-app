@@ -10,6 +10,7 @@ import Footer from './components/Footer';
 import ProductList from './components/ProductList';
 import Banner from './components/Banner';
 import Cart from './components/Cart';
+import Appgame2 from './appgame2';
 
 
 
@@ -18,8 +19,8 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     {/* <Horloge /> */}
-    {/* <Appgame /> */}
-    <App />
+    <Appgame2 />
+    {/* <App /> */}
   </React.StrictMode>
 );
 
